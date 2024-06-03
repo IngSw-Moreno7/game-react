@@ -1,18 +1,16 @@
 import { useNavigate } from 'react-router-dom'
-import '../App.css'
+
 const Ganado = () => {
 
   const navegacion = useNavigate ();
 
   return (
     <>
-    <h1>¡Felicidades! Has demostrado tener una mente 
-    ágil y un gran conocimiento del vocabulario. 
-    ¡Sigue así y nunca dejes de divertirte con este juego!</h1>
+    <h1 className="titulo"> ¡Felicidades! </h1>
     <div className="imagen">
-      <img src={require(`../assets/el_ahorcado1.png`)} alt="" />
+      <img src={require(`../assets/emoji.png`)} alt="" />
     </div>
-    <button onClick={()=> navegacion("/juego/")}>Volver a jugar</button>
+    <button className="boton" onClick={()=> navegacion("/juego/")}>Volver a jugar</button>
     </>
   )
 }

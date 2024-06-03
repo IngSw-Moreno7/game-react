@@ -6,8 +6,8 @@ const Portada = () => {
 
   return (
     <>
-    <h1>BIENVENIDOS</h1>
-    <button className="boton" onClick={() => navegacion ("/Juego") }>Jugar</button>
+      <h1 className="itulo">BIENVENIDOS <br /> a <br /> TechAhorcado</h1>
+      <button className="boton" onClick={() => navegacion ("/Juego") }>Jugar</button>
     </>
   )
 }
