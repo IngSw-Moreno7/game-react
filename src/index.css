@@ -1,13 +1,91 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fondo y contenedor principal */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+.portada {
+  padding-top: 100px; /* Espacio superior */
+}
+/* Encabezado */
+h1 {
+  font-size: 3em;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Botón */
+.boton {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.boton:hover {
+  background-color: #357ABD;
+  transform: scale(1.05);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Estilos existentes */
+.imagen {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.imagen img {
+  width: 25%;
+}
+.pregunta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 1.5em;
+  color: #4a90e2;
+}
+
+.palabra {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Agregado para centrado vertical */
+  margin-bottom: 1em;
+}
+
+.palo {
+  margin: 2px;
+  border-bottom: 1px solid #000000;
+  width: 32px;
+  height: 45px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.botones button {
+  width: 55px;
+  margin: 5px;
+  padding: 5px 0;
+  font-size: 1.3em;
+  background-color: #FFFFFF;
+  border: 1px dashed #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
 }
